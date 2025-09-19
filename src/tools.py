@@ -15,7 +15,7 @@ class NegociacaoTools:
     """
 
     @tool("consultar_cpf")
-    def consultar_cpf(self, cpf: str) -> dict:
+    def consultar_cpf(cpf: str) -> dict:
         """
         Consulta os dados de um cliente a partir do CPF.
 
@@ -43,7 +43,7 @@ class NegociacaoTools:
         return result or {}
 
     @tool("ver_divida")
-    def ver_divida(self, devedor_id: int) -> float:
+    def ver_divida(devedor_id: int) -> float:
         """
         Consulta o valor total das dívidas pendentes de um devedor.
 
@@ -70,7 +70,7 @@ class NegociacaoTools:
         return float(result.get("total", 0)) if result else 0.0
 
     @tool("ver_acordo")
-    def ver_acordo(self, devedor_id: int) -> float | str:
+    def ver_acordo(devedor_id: int) -> float | str:
         """
         Verifica se existe um acordo ativo para o devedor e retorna seu valor.
 
@@ -100,7 +100,6 @@ class NegociacaoTools:
 
     @tool("registrar_acordo")
     def registrar_acordo(
-        self,
         devedor_id: int,
         negociador_id: int,
         valor_acordo: float,

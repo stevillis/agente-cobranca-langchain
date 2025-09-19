@@ -10,7 +10,7 @@ from langchain_openai import ChatOpenAI
 from prompts import system_message
 from tools import NegociacaoTools
 
-llm = ChatOpenAI(model_name="gpt-4.1-nano", temperature=0)
+llm = ChatOpenAI(model_name="gpt-4.1-mini", temperature=0)
 
 tools = [
     NegociacaoTools.consultar_cpf,
