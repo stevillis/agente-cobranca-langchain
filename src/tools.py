@@ -6,7 +6,7 @@ from datetime import datetime
 
 from langchain.tools import tool
 
-from .db import get_db_connection
+from db import get_db_connection
 
 
 class NegociacaoTools:
