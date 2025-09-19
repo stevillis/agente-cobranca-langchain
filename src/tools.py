@@ -1,5 +1,5 @@
 """
-Ferramentas para negociação de dívidas.
+This module provides tools for debt negotiation operations.
 """
 
 from datetime import datetime

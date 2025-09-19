@@ -1,3 +1,8 @@
+"""
+This module provides database connection utilities for the debt negotiation
+assistant.
+"""
+
 import os
 
 import psycopg2

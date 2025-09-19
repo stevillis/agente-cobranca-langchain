@@ -1,5 +1,5 @@
 """
-This module defines prompts for a debt negotiation assistant.
+This module provides prompts for a debt negotiation assistant.
 """
 
 from langchain.schema import SystemMessage
